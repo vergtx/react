@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+//import Hello from './01/Hello';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+//import Myclock from './02/Myclock';
+
+import Box from './03/Box';
+
+                                // 리액트 구조
+function App() {               // 내가 만든사용자 정의 태그는 구분을위해서 대문자로 사용해야한다.
+  return (                    // 컴포넌트 만들어야한다.
+
+  
+  // <Hello />                     // <<이런식으로 꺽쇠사용 !시작태그와 종료태그가 반드시 잇어야 한다.
+  //<Myclock />
+  <Box />
+
+
+   );
 }
-
 export default App;
+
