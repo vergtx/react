@@ -1,4 +1,4 @@
-import BoxRows from "./BoxRows";
+import BoxRows from "./BoxRows1";
 
 const Box = () => {
     
@@ -24,11 +24,11 @@ const Box = () => {
 
                         </tr>
                     </thead>
-
-                    <tbody>
+                    
+                    
                         <BoxRows mv={mvlist} />     
                         
-                    </tbody>
+                    
 
                 </table>
 

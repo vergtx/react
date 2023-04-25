@@ -1,10 +1,13 @@
 import Myclockimage from "./Myclockimage";
-import Myclocktime from "./Myclocktime"; 
+import Myclocktime1 from "./Myclocktime1"; 
 import '../01/Hello.css';
 
 
 
 const Myclock = () => { 
+
+
+    
     return (
         <main className='container'>  
         <article data-theme="dark">

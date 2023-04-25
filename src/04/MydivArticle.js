@@ -5,8 +5,9 @@
 import './Mydiv.css' ; // 마이 디아이브이와 마이디아이브이 아티클 h1 전역으로 적용
 import style from './Mydiv.module.css'; // 모듈.css는 style from으로 불러와 사용 온리 컴포넌트에만 적용
 
-//state 변수 사용 1단계 
-//state 변수 사용 2단계 스테이트 변수선언 배열로 해야 함
+// state는 수정해야하는 부분에 사용 할 수 있음
+//state 변수 사용 1단계 use state hook <<리액트 함수를 import
+//state 변수 사용 2단계 스테이트 변수선언 반드시 대괄호로 시작하는 배열[]로 해야 함(리턴된 함수 2개 있는데 cnt와 setCnt에 넣겟다는 의미 setcnt는 cnt 어떻게 바꾸고 때사용)
 //state 변수 사용 3단계 내용 변경
 import { useState } from 'react'; //1단계 improt
 
