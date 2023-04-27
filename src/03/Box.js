@@ -7,28 +7,22 @@ const Box = () => {
   
       
 
-
     return (
 
         <main className =  "container">
             <article>
-                <header> 일일 박스오피스</header>
+                <header>🎬 Box Office</header>
 
                 <table>
                     <thead>
                         <tr>
-                        <th scope="col">순위</th>
-                        <th scope="col">영화명</th>
-                        <th scope="col">매출액</th>
-                        <th scope="col">증감</th>
-
+                            <th scope="col" class="rank">순위</th>
+                            <th scope="col" class="movie-title">영화명</th>
+                            <th scope="col" class="sales">매출액</th>
+                            <th scope="col" class="change">증감</th>
                         </tr>
                     </thead>
-                    
-                    
                         <BoxRows mv={mvlist} />     
-                        
-                    
 
                 </table>
 

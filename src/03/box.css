@@ -1,7 +1,81 @@
-right {
+.right {
   text-align: right;
 }
 
-td {
-    text-align:left;
+
+
+  thead tr th {
+    text-align: center;
+  }
+
+
+  tfoot {
+    background-color: #eee8902c;
+  
+  }
+
+  tfoot td {
+    text-align: center;
+  }
+
+
+
+  article {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  header {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #4d4d4d;
+    text-shadow: 1px 1px #ccc;
+    letter-spacing: 0.1em;
+    background-color: #fffefe;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+---------------------------
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  th {
+    font-weight: bold;
+    text-align: left;
+    padding: 12px;
+    border-bottom: 2px solid #cccccc;
+  }
+  
+  .rank {
+    width: 60px;
+    text-align: center;
+  }
+  
+  .movie-title {
+    width: 50%;
+  }
+  
+  .sales {
+    width: 120px;
+  }
+  
+  .change {
+    width: 100px;
+  }
+  
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
   }

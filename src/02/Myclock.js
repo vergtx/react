@@ -12,7 +12,7 @@ const Myclock = () => {
         <main className='container'>  
         <article data-theme="dark">
             <Myclockimage />
-            <Myclocktime />
+            <Myclocktime1 />
         </article>   
         </main>
     );
