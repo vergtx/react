@@ -35,9 +35,11 @@ const Frcst = () => {
         let dtcntiem = dtcn[k].split(',');
         dtcntiem = dtcntiem.map((item)=> item.split(':'));
         dtcntiem =  dtcntiem.map((item)=>
-                    <div key = {item[0]}>
-                        <span className={style.sp1}>{item[0]}</span>
-                        <span className={style.sp2}>{item[1]}</span>
+                    <div className={style.dt} key = {item[0]}>
+                    <span className={style.sp1}>{item[0]}</span>
+                    <span className={item[1].trim() === "낮음" ? style.sp2 : item[1].trim() === "높음" ? style.sp3 : style.sp4}>
+                    {item[1]}</span>
+
                     </div>
                 )
         //state 3단계 값변경
@@ -51,16 +53,16 @@ const Frcst = () => {
 
 
     return (
-        <main classsName='container'>
+        <main className={style.container}>
             <article>
                 <header>
                     <h1>초미세먼지주간예고</h1>
-                    <div className='grid'>
+                    <div className={style.grid}>
                         {dttag}
                         
                     </div>
                 </header>
-                    <div className='grid'>
+                <div className={style.gridBody}>
                     {bodytag}    
                     </div>
                    
