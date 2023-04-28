@@ -1,0 +1,17 @@
+.dt{
+    display: inline-flexbox;
+    background-color: rgba(84, 126, 126, 0.247);
+    justify-content: center;
+    align-content: center;
+    
+
+}
+
+.dt:hover{
+    background-color: rgba(0, 0, 255, 0.288);
+
+}
+
+.sp2{
+    color: blue;
+}
