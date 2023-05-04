@@ -22,7 +22,7 @@ const Myref = () => {
 
     }
 
-    const resetItem = (e) => {
+    const resetItem = (e) => {   //이벤트의 기본 동작을 막기 위해 사용되는 함수입니다.preventDefault()를 사용하면 페이지를 다시 로드하지 않고 JavaScript 코드를 실행하여 원하는 동작을 수행할 수 있습니다.페이지 새로고침을 막기 위해 사용
         console.log("resetItem")
     }
 
