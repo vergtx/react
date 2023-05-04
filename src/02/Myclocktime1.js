@@ -5,7 +5,7 @@ import {useState } from "react";
 const Myclocktime1 = () => {
 
     //let mytime = new Date().toLocaleTimeString();
-    //mytime 는  현재시점의 시강 가지고 오는 식
+    //mytime 는  현재시점의 시간 가지고 오는 식
 
     //const [mytime, setmytime] = useState(t);
     //let cnt = 0;

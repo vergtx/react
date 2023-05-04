@@ -1,0 +1,16 @@
+.Taccidentnav3-container {
+    background-color: #4076db50;
+    padding: 10px;
+    border: 1px solid #5e9ce246;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .Taccidentnav3-container > div {
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
