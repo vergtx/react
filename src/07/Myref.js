@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect} from "react";
-import styles from './Myref.module.css'
+import styles from './Myref.module.css';
 
 // useraf 는 state 랜더링 일어날때 바뀐값 한번에 보임 그전까지는 콘솔에서 확인 가능
 const Myref = () => {
@@ -21,16 +21,19 @@ const Myref = () => {
     const addItem = (e) => {
         e.preventDefault();
         itemArr.current = [...itemArr.current, txtref.current.value] // 배열 그대로에 내가 찍은 변수 값 아이템커런트에  추가
+        itemArr.current = [...new Set(itemArr.current)];  //중복값 입력안되게 하는 방법 new Set
+        itemArr.current = [... itemArr.current];
         console.log("addItem", itemArr.current )
 
     
-        let tempTag = itemArr.current.map((item, idx) => <span key = {idx}>{item}</span>) ;
+        let tempTag = itemArr.current.map((item, idx) => <span className={styles.sp}/*변수로줘야 해서 중괄호*/  key = {idx}>{item}</span>) ;
         setItemtag(tempTag);
+        resetItem();
 
     }
-    const resetItem = (e) => {   //이벤트의 기본 동작을 막기 위해 사용되는 함수입니다.preventDefault()를 사용하면 페이지를 다시 로드하지 않고 JavaScript 코드를 실행하여 원하는 동작을 수행할 수 있습니다.페이지 새로고침을 막기 위해 사용
+    const resetItem = () => {   //이벤트의 기본 동작을 막기 위해 사용되는 함수.preventDefault()를 사용하면 페이지를 다시 로드하지 않고 JavaScript 코드를 실행하여 원하는 동작을 수행할 수 있습니다.페이지 새로고침을 막기 위해 사용
         txtref.current.value = '';
-        txtref.current.focus();
+        txtref.current.focus();   // 이 부분은 등록 누른이 후 인풋창 비워지게 하는 법
         console.log("resetItem")
     }
 
@@ -40,7 +43,7 @@ const Myref = () => {
         <main className="container">
             <article>
                 <header>
-                    <from>
+                    <form>
                         <div className="grid">
                             <div>
                                 <label htmlFor="txt1">과일입력</label>
@@ -55,9 +58,9 @@ const Myref = () => {
 
                         </div>
                         
-                    </from>
+                    </form>
                 </header>
-                <div className="grid">
+                <div>
                     {Itemtag}
                        
                 </div>
