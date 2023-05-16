@@ -1,0 +1,75 @@
+btDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btDiv > button {
+    margin-left: 5px;
+}
+
+
+
+.articleTags {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #FFC107; /* 한국 느낌을 나타내는 태그 배경색 */
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    font-size: 12px;
+  }
+  
+  .articleContainer::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: #FFC107; /* 강조할 색상 선택 */
+  }
+
+  .articleContainer header {
+    position: relative;
+    z-index: 1;
+    background-color: #ecb368d0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+    text-align: center;
+  }
+
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .imageContainer img {
+    max-width: 100%;
+     max-height: 100%;
+    object-fit: contain;
+    
+  }
+
+  .title {
+    
+    font-family: 'Poppins', sans-serif;
+    /* 다른 스타일 속성들... */
+  }
+
+  .header{
+    background-color: #ecb3685e;
+  }
+
+
+  .button{
+    background-color: #ecb368d0;
+  
+  }
+
+
+

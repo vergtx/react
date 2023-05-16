@@ -4,7 +4,7 @@ https://apis.data.go.kr/B551011/PhotoGalleryService1/gallerySearchList1?serviceK
 */
 import { useState, useEffect, useRef } from 'react';
 import styles from './Gallery.module.css' ;
-import Gallary_info from './Gallary_info';
+import Gallary_info from './GallaryInfo';
 import './Gallary_info.css';
 
 
