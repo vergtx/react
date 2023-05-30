@@ -1,6 +1,7 @@
 import UltraSrtFcst from "./UltraSrtFcst";
 import VilageFcst from "./VilageFcst";
 import FcstNav from "./FcstNav";
+import styles from "./Fcst.module.css";
 
 import FcstMain from "./FcstMain";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -10,7 +11,7 @@ const Fcst = () => {
 
     return(
         <BrowserRouter>
-            <main className="container">
+            <main className={styles.container}>
                 <FcstNav />
                 
 

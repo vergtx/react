@@ -48,7 +48,8 @@ const FcstMain = () => {
     return(
 
         <article className={styles.container}>
-            <header className={styles.header}><h2 className={styles.heading}>일기예보</h2></header>
+            <header className={styles.header}>
+                <h2 className={styles.heading}>일기예보</h2></header>
             <div className={styles.grid}>
                 <div>
                     <input ref={txt1} type="date" id='dt' name='dt' onChange={() => getDt()}></input>

@@ -1,45 +1,27 @@
-nav {
-    background-color: #b3e5fc;
-    padding: 10px;
-    color: #fff;
-    border-bottom: 1px solid #90caf9;
-  }
-  
-  nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    align-items: center;
-  }
-  
-  nav ul li {
-    margin-right: 20px;
-  }
-  
-  nav ul li:last-child {
-    margin-right: 0;
-  }
-  
-  nav ul li h4 {
-    font-size: 24px;
-    margin: 0;
-    font-family: 'Roboto';
-    color: #0277bd;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #0277bd;
-    font-size: 16px;
-    padding: 8px 12px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-    background-color: #e1f5fe; /* Default button background color */
-  }
-  
-  nav ul li a:hover {
-    background-color: #90caf9;
-    color: #fff;
-  }
-  
+.nav {
+  background-color: #f0f0f0; /* Gray background color */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: #808080; /* Gray button color */
+  transition: background-color 0.3s ease;
+}
+
+.nav ul li a:hover {
+  background-color: #999999; /* Darker gray button color on hover */
+  color: #ffffff; /* Text color on hover */
+}

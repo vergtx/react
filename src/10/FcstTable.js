@@ -86,6 +86,7 @@ const FcstTable = ({ datas, gubun }) => {
           </tr>
         </thead>
         <tbody>
+         
             {filteredDatas.map((item, index) => (
                 <tr key={index}>
                     <td>{item.category}</td>
