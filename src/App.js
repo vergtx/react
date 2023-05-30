@@ -10,7 +10,10 @@
   //import Gallery from './08/Gallery';
   //import Gallery_ver2 from './08_교수님피드백/Gallery_ver2';
    // import RouteMain from './09/RouteMain';
-    import Fcst from './10/Fcst';
+   // import Fcst from './10/Fcst';
+  import Cnt from './111/Cnt';
+
+
 function App() {               // 내가 만든사용자 정의 태그는 구분을위해서 대문자로 사용해야한다.
   return (                    // 컴포넌트 만들어야한다.
 
@@ -25,7 +28,9 @@ function App() {               // 내가 만든사용자 정의 태그는 구분
   //<Gallery />
   //<Gallery_ver2 />
   //<RouteMain/>
-  <Fcst/>
+  //<Fcst/>
+  
+  <Cnt/>
    );
 }
 export default App;

@@ -1,0 +1,45 @@
+nav {
+    background-color: #b3e5fc;
+    padding: 10px;
+    color: #fff;
+    border-bottom: 1px solid #90caf9;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li h4 {
+    font-size: 24px;
+    margin: 0;
+    font-family: 'Roboto';
+    color: #0277bd;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #0277bd;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    background-color: #e1f5fe; /* Default button background color */
+  }
+  
+  nav ul li a:hover {
+    background-color: #90caf9;
+    color: #fff;
+  }
+  

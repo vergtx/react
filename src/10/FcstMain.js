@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect, useRef } from "react"; // 날짜와 도시 선택한 값 초단기와 단기로 가져가기위해 사용
 import xy from './getxy.json';
+import styles from "./FcstMain.module.css";
 const FcstMain = () => {
 
     
@@ -34,11 +35,6 @@ const FcstMain = () => {
         setdt(tdt);
     }
 
-  
-    
-   
-  
-
     const getSel = () => {
         let tSel = parseInt(sel1.current.value);
         let temp = xy.filter((item) => item["행정구역코드"] === tSel)[0];
@@ -48,17 +44,12 @@ const FcstMain = () => {
         sety(temp["격자 Y"]);
      } 
 
-    
-
-
-
-    
 
     return(
 
-        <article>
-            <header><h2>일기예보</h2></header>
-            <div className='grid'>
+        <article className={styles.container}>
+            <header className={styles.header}><h2 className={styles.heading}>일기예보</h2></header>
+            <div className={styles.grid}>
                 <div>
                     <input ref={txt1} type="date" id='dt' name='dt' onChange={() => getDt()}></input>
                 </div>
@@ -70,10 +61,10 @@ const FcstMain = () => {
                 </div>
             </div>
 
-            <footer>
-                <div className='grid'>
-                    <Link to ={`/ultra/${dt}/${area}/${x}/${y}`} role='button'>초단기예보</Link>
-                    <Link to ={`/Vilage/${dt}/${area}/${x}/${y}`} role='button'>단기예보</Link>
+            <footer className={styles.footer}>
+            <div className={styles.buttonGroup}>
+                    <Link to ={`/ultra/${dt}/${area}/${x}/${y}`} role='button' className={styles.button}>초단기예보</Link>
+                    <Link to ={`/Vilage/${dt}/${area}/${x}/${y}`} role='button' className={styles.button}>단기예보</Link>
                 </div>
             </footer>
                 

@@ -4,9 +4,10 @@ import { useParams } from 'react-router-dom';
 
 
 
+
 const UltraSrtFcst = () => {
     console.log("useParams", useParams);
-    
+ 
     
 
     const dt = useParams().dt;    // useParams :URL 파라미터로 전달되는 값 받음
@@ -15,8 +16,14 @@ const UltraSrtFcst = () => {
     const y = useParams().y;
 
     const [datas, setdatas] = useState();
+   
+ 
+ 
+
     useEffect(()=> {
-        const url = `https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=bedwbCq%2By1PSxkAdCkwAfnUxOoMTnwcBgpSQabTqVoTGPq%2FEI9D9tfvkuiPdaBfhAh%2F1YjJ%2FUayyNdrqpr1Zaw%3D%3D&numOfRows=10&pageNo=1&base_date=${dt}&base_time=0500&nx=${x}&ny=${y}&dataType=json`
+        
+
+        const url = `https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtFcst?serviceKey=bedwbCq%2By1PSxkAdCkwAfnUxOoMTnwcBgpSQabTqVoTGPq%2FEI9D9tfvkuiPdaBfhAh%2F1YjJ%2FUayyNdrqpr1Zaw%3D%3D&numOfRows=60&pageNo=1&base_date=${dt}&base_time=0630&nx=${x}&ny=${y}&dataType=JSON`
         console.log("url" , url);
 
         fetch(url)
@@ -24,7 +31,9 @@ const UltraSrtFcst = () => {
         .then((data) => setdatas(data.response.body.items.item))
         .catch((err) => console.log(err))
 
-    }, [])
+      
+
+    }, [dt, x, y]);  // useEffect의 의존성 배열에 dt, x, y 추가
 
     
 
@@ -32,9 +41,9 @@ const UltraSrtFcst = () => {
 
         
         <article>
-            <header>{area}</header>
-            <main>초단기예보</main>
-            {datas && <FcstTable data={datas} gubun="초단기예보" />}
+            <header><h4>{area} 초단기예보</h4></header>
+            <main></main>
+            {datas && <FcstTable datas={datas} gubun="초단기예보" />}
                 
             
 
